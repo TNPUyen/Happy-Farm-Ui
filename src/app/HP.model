@@ -1,0 +1,5 @@
+export interface Place{
+    temp:number;
+    humid:number;
+    date;
+}
