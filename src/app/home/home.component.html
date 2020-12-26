@@ -31,24 +31,47 @@
       <title>HappyFarm</title>
 
     </head>
-   <body bgcolor="#d7ffd9">
-        <h1 style="font-family: Helvetica;color: black; left: 46%; position: fixed;"><img style="width: 170px; justify-content: center;" src="../../assets/Logo.jpg"></h1>
-	<div class="center">
-	   <div align="center" class="form">
-           <br><br>
-            <p style = 'line-height: 60px;font-family: Helvetica;color: #fff;font-size: 50px;' id="temperature">
-                <img src = '../../assets/temp.png' height="60px" width="60px" style='vertical-align: middle'/>  {{totalAngularPackages.temp}} °C
-            </p>
-            <p style = 'line-height: 60px;font-family: Helvetica;color: #fff;font-size: 50px;' id="humidity">
-                <img src = '../../assets/humidity-512.png' height="60px" width="60px" style='vertical-align: middle' /> {{totalAngularPackages.humid*10}} %
-            </p>
-            <button mat-button class="buttontc">Tưới cây</button>       
+   <body>
+        <div class="container">
+            <div class="content">
+                <div class="left-content">
+                    <div class="title">
+                        <h1>Tree Watering</h1>
+                    </div>
+                    <div class="title-home">
+                        <img src = '../../assets/watering-plants.svg'/>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div class="main-content-top">
+                        <div class="info-content">
+                            <div class="title">
+                                <h3>Temperature</h3>
+                            </div>
+                            <div class="temp">
+                                <p><img src = '../../assets/temp.png' height="100px" width="100px" style='vertical-align: middle'/>  {{totalAngularPackages.temp}}°C</p>
+                            </div> 
+                        </div>
+                        <div class="info-content">
+                            <div class="title">
+                                <h3>Humidity</h3>
+                            </div>
+                            <div class="temp">
+                                <P><img src = '../../assets/humidity.svg' height="100px" width="100px" style='vertical-align: middle' /> {{totalAngularPackages.humid}}%</P>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="main-content-bottom">
+                        <div class="title">
+                            <h3>Status</h3>
+                        </div>
+                        <div class="result">
+                            <p>{{status}}</p>
+                            <button mat-raised-button class="btn">Tưới cây</button>  
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-	</div>
-	
-
     </body>
-    <footer class="footer">
-	</footer>
-	
 </html>

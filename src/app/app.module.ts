@@ -10,6 +10,8 @@ import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {FormsModule} from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { HttpClientModule } from '@angular/common/http';
+
+import { NgApexchartsModule } from 'ng-apexcharts';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgApexchartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
